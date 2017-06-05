@@ -1,5 +1,12 @@
 # Angular4Lazyload
 
+Angular4Lazyload 利用[Angular CLI](https://github.com/angular/angular-cli)实现懒加载，通过loadChildren以两种方式加载module。
+
+* about文件夹下是通过在router中以`loadChildren: '../about/about.module#AboutModule'`的方式。
+
+* contact文件夹下是：定义contact的module并导出module，在routing中首先定义函数：`export function loadBundledModule() { return ContactModule; }` 在router中引用`component: HelloComponent`，实现加载module。
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.0.
 
 ## Development server

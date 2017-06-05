@@ -1,6 +1,6 @@
 {
     "name": "angular4-lazyload",
-    "version": "1.0.0.0",
+    "version": "1.0.1",
     "description": "Angular4实现懒加载",
     "license": "MIT",
     "keywords": [

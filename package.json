@@ -9,7 +9,7 @@
         "Angular4"
     ],
     "author": "Jet Lu",
-    "homepage": "",
+    "homepage": "https://github.com/JetLu/angular4-lazyload",
     "scripts": {
         "ng": "ng",
         "start": "ng serve",

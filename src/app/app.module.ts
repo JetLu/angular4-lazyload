@@ -1,10 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
 import { AppRoutingModule } from './router/routing.module';
 import { HomeComponent } from './home/home.component';
+
+import { InMemoryDataService } from './in-memory-data.service'
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { AdminService } from './admin.service';
 
 @NgModule({
   declarations: [
@@ -14,9 +19,11 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule,
+    InMemoryWebApiModule.forRoot(InMemoryDataService)
   ],
-  providers: [],
+  providers: [AdminService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

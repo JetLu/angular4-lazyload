@@ -8,7 +8,7 @@ import { ContactModule } from '../contact/contact.module'
 export function loadBundledModule() { return ContactModule; }
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   {
     path: 'hello',
     component: HelloComponent

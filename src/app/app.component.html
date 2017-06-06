@@ -1,9 +1,21 @@
-<div class="navbar">
-    <ul>
-        <li><a [routerLink]="['']" routerLinkActive="active">Home</a></li>
-        <li><a [routerLink]="['hello']" routerLinkActive="active">Hello</a></li>
-        <li><a [routerLink]="['about']" routerLinkActive="active">About</a></li>
-        <li><a [routerLink]="['contact']" routerLinkActive="active">Contact</a></li>
-    </ul>
+<div class="container">
+    <div class="row">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+                    <ul class="nav navbar-nav">
+                        <li><a [routerLink]="['home']" routerLinkActive="active">Home</a></li>
+                        <li><a [routerLink]="['hello']" routerLinkActive="active">Hello</a></li>
+                        <li><a [routerLink]="['about']" routerLinkActive="active">About</a></li>
+                        <li><a [routerLink]="['contact']" routerLinkActive="active">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-md-10">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
 </div>
-<router-outlet></router-outlet>

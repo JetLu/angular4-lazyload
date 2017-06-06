@@ -1,3 +1,6 @@
-<p>
-  home works!
-</p>
+<div class="panel panel-default" *ngFor="let user of userArr">
+    <div class="panel-heading">{{user.id}}</div>
+    <div class="panel-body">
+        {{user.name}}
+    </div>
+</div>
